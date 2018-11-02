@@ -1,3 +1,11 @@
+html {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./bg.jpg);
+  background-size: cover;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -8,26 +16,32 @@ body {
 
 .keys {
   display: flex;
-  flex-direction: row;
-  border: 1px solid black;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .key {
   padding: 10px;
-  margin: 5px;
-  border: 1px solid black;
-  height: 50px;
-  width: 50px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: white;
+  width: 8rem;
+  background-color: rgba(0, 0, 0, 0.514);
+  transition: all 0.07s ease;
 }
 
 kbd {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .sound {
   display: block;
+  font-size: 2rem;
 }
