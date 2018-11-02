@@ -9,8 +9,16 @@ function playSound(e) {
   key.classList.add("playing");
 }
 
+function removeClass(key) {
+  if (key.propertyName != "transform") return;
+
+  key.target.classList.remove("playing");
+}
+
 function init() {
   window.addEventListener("keydown", playSound);
+  const keys = document.querySelectorAll(".key");
+  keys.forEach(key => key.addEventListener("transitionend", removeClass));
 }
 
 window.addEventListener("load", init);
