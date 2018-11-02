@@ -45,3 +45,10 @@ kbd {
   display: block;
   font-size: 2rem;
 }
+
+.playing {
+  transform: scale(1.1);
+  background-color: rgb(226, 211, 0);
+  border: none;
+  box-shadow: 5px 5px 20px #000;
+}
